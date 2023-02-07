@@ -48,7 +48,7 @@ const MainMenu: React.FC = () => {
         setOpenKeys([''])
       }
     }
-    //如果现在选中的展开选项中的页面，刷新页面时让展开选项继续展开
+    //如果现在选中的展开选项中的页面，刷新页面时让展开选项继续展开     
     const [openKeys, setOpenKeys] = useState([currentPath.pathname.slice(1,6)]);
     const handleOpenChange = (key:string[])=>{
       console.log(key)
